@@ -1,0 +1,43 @@
+
+.card {
+    grid-column-start: span 4;
+    width: 100%;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    background: var(--black-b);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__info h2 {
+    font-weight: 600;
+    font-size: 24px;
+
+    color: var(--white-a);
+    margin-top: 40px;
+}
+.card__text {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+
+    
+}
+.card__text p {
+    flex: 0 0 80%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--white-b);
+}
+.card__text span {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
