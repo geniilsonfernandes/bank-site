@@ -1,0 +1,131 @@
+.cover {
+    padding-top: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}   
+
+.cover__left {
+    flex: 0 0 50%;
+}
+.cover__left > span {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--blue-a);
+    position: relative;
+    margin-left: 16px;
+}
+.cover__left > span::after {
+    content: "";
+    position: absolute;
+    left: -16px;
+    bottom: 0;
+    background: var(--blue-a);
+    width: 2px;
+    height: 100%;
+}
+.cover__left h1 {
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: 16px;
+    color: var(--white-a);
+    max-width: 85%;
+}
+.cover__right {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll__action {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    margin: 48px 0;
+}
+.scroll__action {
+    width: 100%;
+    justify-content: flex-start;
+}
+.scroll__action span {
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 16px;
+    color: var(--blue-a);
+}
+.cover__photo {
+    max-width: 100%;
+}
+
+/* info header */
+.info {
+    margin-top: 48px;
+    display: flex;
+}
+.date_info:nth-child(1){
+    margin-right: 48px;
+}
+.date_info {
+    display: flex;
+    align-items: center;
+}
+.date_info > span {
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--white-a);
+}
+.date_info > p {
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--white-b);
+    max-width: 80px;
+}
+/* info header */
+
+
+/* mobile */
+@media screen and (max-width: 1088px) {
+    .cover__left h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 746px) {
+    .cover__left h1 {
+        font-size: 32px;
+    }
+    .cover {
+        flex-direction: column;
+    }
+    .cover__left {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cover__left h1 {
+        max-width: 100%;
+        text-align: center;
+
+        font-size: 32px;
+    }
+    .cover__right {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .cover__photo {
+        max-width:80%;
+    }
+    .scroll__action {
+        display: none;
+    }
+}

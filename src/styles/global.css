@@ -6,6 +6,9 @@
 body {
     font-family: "Inter", sans-serif;
     background: var(--black-bg);
+    
+}
+.over{
     overflow-x: hidden;
 }
 
