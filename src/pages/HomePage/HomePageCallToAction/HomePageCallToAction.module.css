@@ -25,6 +25,11 @@
     display: flex;
     justify-content: center;
 }
-.cta__btn button:nth-child(1){
-    margin-right: 38px;
+
+
+  @media screen and (max-width: 446px) {
+    .cta__btn{
+        flex-direction: column;
+        align-items: center;
+    }
 }

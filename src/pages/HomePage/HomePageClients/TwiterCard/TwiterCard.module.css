@@ -1,0 +1,25 @@
+
+.twite__head {
+    display: flex;
+    justify-content: space-between;
+}
+.twite__user {
+
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white-a);
+}
+.twiterCard {
+    background: #2d2e2e;
+    border-radius: 8px;
+    padding: 32px;
+
+}
+.twite__text {
+    
+    margin-top: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--white-b);
+}

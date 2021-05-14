@@ -1,0 +1,27 @@
+.testimonial {
+    padding: 60px 0;
+}
+
+.testimonial__head {
+}
+
+.testimonial__head h2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--white-a);
+}
+.testimonial__head h2 span {
+    color: var(--white-b);
+    margin-top: 8px;
+}
+
+.testimonial__grid{
+    margin-top: 48px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

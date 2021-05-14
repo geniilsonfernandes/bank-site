@@ -1,0 +1,26 @@
+
+.links__group h2 {
+
+    font-weight:600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: var(--white-a);
+    margin-bottom: 24px;
+}
+
+.link__group_list {
+    list-style: none;
+}
+.link__group_list li:not(:last-child) {
+    margin-bottom: 24px;
+}
+.link__group_list li a {
+    padding: 16px 0;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white-b);
+}
+
+
