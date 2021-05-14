@@ -1,8 +1,8 @@
 .service {
-    padding: 60px 0;
+    padding: 84px 0;
 }
 
-.head {
+.service__head {
     font-weight: 600;
     font-size: 24px;
     color: var(--white-a);
@@ -10,7 +10,7 @@
     letter-spacing: -0.5px;
 }
 
-.services__grid {
+.service__grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 32px;
@@ -20,7 +20,7 @@
 
 
 @media screen and (max-width: 746px) {
-    .services__grid {
+    .service__grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 56px 16px;
     }

@@ -5,7 +5,9 @@ import Navegation from "../../components/Navegation/Navegation";
 import HomePageHeader from "./HomePageHeader/HomePageHeader";
 import HomePageServices from "./HomePageServices/HomePageServices";
 //css
-import styles from './HomePage.module.css'
+import styles from "./HomePage.module.css";
+import HomePageCallToAction from "./HomePageCallToAction/HomePageCallToAction";
+import HomePageFeatures from "./HomePageFeatures/HomePageFeatures";
 const HomePage = () => {
   return (
     <>
@@ -13,9 +15,9 @@ const HomePage = () => {
         <Navegation />
       </div>
       <HomePageHeader />
-      <section className="mwfit">
-        <HomePageServices />
-      </section>
+      <HomePageServices />
+      <HomePageCallToAction />
+      <HomePageFeatures />
     </>
   );
 };

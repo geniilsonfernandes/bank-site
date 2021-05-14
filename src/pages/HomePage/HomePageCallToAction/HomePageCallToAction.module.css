@@ -1,0 +1,30 @@
+.cta {
+    padding: 84px 0;
+}
+.cta__text {
+    margin: 0 auto;
+    max-width: 550px;
+}
+.cta__text h2 {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: var(--white-a);
+    line-height: 32px;
+}
+.cta__text p {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--white-b);
+}
+.cta__btn{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+.cta__btn button:nth-child(1){
+    margin-right: 38px;
+}

@@ -5,7 +5,7 @@ import styles from "./CardService.module.css";
 const CardService = ({Icon,title,text}) => {
   return (
     <div className={styles.card}>
-      <div className={styles.icon}> <Icon /> </div>
+      <div className={styles.card__icon}> <Icon /> </div>
       <div className={styles.card__info}>
         <h2>{title}</h2>
         <div className={styles.card__text}>

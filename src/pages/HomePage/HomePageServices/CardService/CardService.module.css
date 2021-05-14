@@ -3,7 +3,7 @@
     grid-column-start: span 4;
     width: 100%;
 }
-.icon {
+.card__icon {
     width: 60px;
     height: 60px;
     background: var(--black-b);
