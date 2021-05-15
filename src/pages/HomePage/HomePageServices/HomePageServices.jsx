@@ -3,30 +3,34 @@ import CardService from "./CardService/CardService";
 //css
 import styles from "./HomePageServices.module.css";
 
-import { ReactComponent as CardIcon } from "../../../svg/card-icon.svg";
-import { ReactComponent as MoedaIcon } from "../../../svg/moeda-icon.svg";
-import { ReactComponent as PorcentIcon } from "../../../svg/porcent-icon.svg";
+import { ReactComponent as CardIcon } from "../../../svg/services/card.svg";
+import { ReactComponent as MoedaIcon } from "../../../svg/services/dolar.svg";
+import { ReactComponent as PorcentIcon } from "../../../svg/services/fee.svg";
 
 const HomePageServices = () => {
   return (
     <section className={styles.service}>
       <div className="mwfit">
-        <div className={styles.service__head}>Resolva sua vida direto pelo app Neon!</div>
+        <div className={styles.service__head}>
+          Solve your life straight through the app!
+        </div>
         <div className={styles.service__grid}>
           <CardService
-            title="Sem anuidade"
-            text="Conta digital com cartão de crédito sem anuidade e sem complicação"
+            title="No annual fee"
+            text="Digital account with credit card without annual fee and without complications"
             Icon={CardIcon}
           />
           <CardService
-            title="Sem taxas"
-            text="Transferências, boletos de depósito e outros serviços gratuitos"
-            Icon={MoedaIcon}
+            title="No service fees"
+            text="
+            Free transfers, deposit slips and other services"
+            Icon={PorcentIcon}
           />
           <CardService
-            title="Mais investimentos"
-            text="Rendem mais que a poupança e você resgata quando quiser"
-            Icon={PorcentIcon}
+            title="
+            More investments"
+            text="Earn more than savings and redeem whenever you want"
+            Icon={MoedaIcon}
           />
         </div>
       </div>

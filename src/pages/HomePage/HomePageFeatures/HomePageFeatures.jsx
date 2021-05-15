@@ -1,5 +1,10 @@
 import React from "react";
-import { ReactComponent as CreditCard } from "../../../svg/CreditCard.svg";
+import ButtonCta from "../../../components/Buttons/ButtonCta/ButtonCta";
+
+import { ReactComponent as Dolar } from "../../../svg/features/dolar.svg";
+import { ReactComponent as Zero } from "../../../svg/features/zero.svg";
+import { ReactComponent as Card } from "../../../svg/features/card.svg";
+
 import FeaturesCard from "./FeaturesCard/FeaturesCard";
 import styles from "./HomePageFeatures.module.css";
 const HomePageFeatures = () => {
@@ -16,29 +21,31 @@ const HomePageFeatures = () => {
                 Homebase + Datahike.
               </p>
               <div className={styles.cta}>
-                <button className={styles.btn}>Abra sua conta digital</button>
+                <ButtonCta text="Open Your Account" />
               </div>
             </div>
           </div>
           <div className={styles.right}>
             <div className={styles.features__items}>
               <FeaturesCard
-                Icon={CreditCard}
-                title="Cartão visa internacional"
+                Icon={Card}
+                title="
+                International Visa Card"
                 text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                     nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
                     volutpat."
               />
               <FeaturesCard
-                Icon={CreditCard}
-                title="Cartão visa internacional"
+                Icon={Zero}
+                title="Zero monthly fee and annual fee"
                 text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                     nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
                     volutpat."
               />
               <FeaturesCard
-                Icon={CreditCard}
-                title="Cartão visa internacional"
+                Icon={Dolar}
+                last={true}
+                title="Investment that yields more than savings"
                 text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                     nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
                     volutpat."

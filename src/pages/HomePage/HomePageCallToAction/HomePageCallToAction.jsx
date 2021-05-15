@@ -8,7 +8,7 @@ const HomePageCallToAction = () => {
     <section className={styles.cta}>
       <div className="mwfit">
         <div className={styles.cta__text}>
-          <h2>Domine o seu dinheiro com uma conta 100% digital e do seu geito</h2>
+          <h2>Master your money with a 100% digital account and your geito</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
             nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.{" "}

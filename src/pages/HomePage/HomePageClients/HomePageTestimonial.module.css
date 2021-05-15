@@ -10,10 +10,10 @@
     flex-direction: column;
     font-weight: 600;
     font-size: 24px;
-    color: var(--white-a);
+    color: var(--text-color-primary);
 }
 .testimonial__head h2 span {
-    color: var(--white-b);
+    color: var(--text-color-secundary);
     margin-top: 8px;
 }
 

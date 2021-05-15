@@ -8,10 +8,11 @@
     border: none;
     height: 60px;
     border-radius: 10px;
-    background: var(--black-b);
+    background: var(--color-primary--contrast);
     text-align: left;
     cursor: pointer;
     margin: 8px;
+    transition:  200ms ease-in-out;
 }
 .btn span{
     margin-left: 12px;
@@ -19,11 +20,11 @@
 .btn span p {
     font-weight: 400;
     font-size: 12px;
-    color: var(--white-b);
+    color: #fff;
 }
 .btn span {
     font-weight: 600;
     font-size: 16px;
 
-    color: var(--white-b);
+    color: #fff;
 }

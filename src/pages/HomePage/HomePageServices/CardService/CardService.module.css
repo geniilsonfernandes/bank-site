@@ -6,7 +6,7 @@
 .card__icon {
     width: 60px;
     height: 60px;
-    background: var(--black-b);
+    background: var(--color-secundary-gradient);
     border-radius: 8px;
 
     display: flex;
@@ -17,22 +17,20 @@
     font-weight: 600;
     font-size: 24px;
 
-    color: var(--white-a);
+    color: var(--text-color-primary);
     margin-top: 40px;
 }
 .card__text {
     margin-top: 16px;
     display: flex;
-    align-items: center;
-
-    
+    align-items: center;   
 }
 .card__text p {
     flex: 0 0 80%;
     font-weight: normal;
     font-size: 16px;
     line-height: 27px;
-    color: var(--white-b);
+    color: var(--text-color-secundary);
 }
 .card__text span {
     flex: 0 0 20%;

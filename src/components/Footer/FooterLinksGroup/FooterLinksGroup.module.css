@@ -5,7 +5,7 @@
     font-size: 16px;
     line-height: 19px;
 
-    color: var(--white-a);
+    color: var(--text-color-primary);
     margin-bottom: 24px;
 }
 
@@ -20,7 +20,7 @@
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-    color: var(--white-b);
+    color: var(--text-color-secundary);
 }
 
 

@@ -38,7 +38,8 @@ const HomePagetesTimonial = () => {
       <div className="mwfit">
         <div className={styles.testimonial__head}>
           <h2>
-            Prático, fácil, moderno <span>Você resolve tudo sem estresse</span>
+            Practical, easy, modern
+            <span>You solve everything without stress</span>
           </h2>
         </div>
         <div className={styles.testimonial__grid}>

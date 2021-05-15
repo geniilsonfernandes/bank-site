@@ -10,7 +10,7 @@
     border: none;
 
     border-radius: 10px;
-    background: var(--black-b);
+    background: var(--color-primary--contrast);
     text-align: left;
     cursor: pointer;
     margin-bottom: 16px;
@@ -21,11 +21,11 @@
 .btn span p {
     font-weight: 600;
     font-size: 12px;
-    color: var(--white-b);
+    color: #fff;
 }
 .btn span {
     font-weight: 400;
     font-size: 16px;
 
-    color: var(--white-b);
+    color: #fff;
 }

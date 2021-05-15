@@ -5,7 +5,7 @@
 }
 body {
     font-family: "Inter", sans-serif;
-    background: var(--black-bg);
+    background: var(--color-bg);
     
 }
 .over{
@@ -79,12 +79,12 @@ body {
 
     color: #000;
     opacity: 1;
-    background: #2F2F2F;
+    background: var(--color-primary--contrast);
     transition: ease-in-out all 200ms;
     margin-left: 6px;
 }
 .testimonial__pagination .swiper-pagination-bullet-active {
-    background: rgb(252, 252, 252);
+    background: var(--color-secundary);
     width: 24px;
     height: 8px;
 } 

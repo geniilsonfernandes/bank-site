@@ -2,6 +2,7 @@ import React from "react";
 //css
 import styles from "./Navegation.module.css";
 import { ReactComponent as Logo } from "../../svg/logo.svg";
+import ButtonCta from "../Buttons/ButtonCta/ButtonCta";
 
 //
 
@@ -10,22 +11,22 @@ const Navegation = () => {
     {
       id: 1,
       link: "/",
-      linkName: "Produtos Neon",
+      linkName: "Products",
     },
     {
       id: 2,
       link: "/",
-      linkName: "Conta digital PJ",
+      linkName: "For Freelancer",
     },
     {
       id: 3,
       link: "/",
-      linkName: "Quem somos",
+      linkName: "Payment",
     },
     {
       id: 4,
       link: "/",
-      linkName: "Ajuda",
+      linkName: "Help",
     },
   ];
 
@@ -45,7 +46,7 @@ const Navegation = () => {
         </ul>
       </div>
       <div className={styles.cta}>
-        <button className={styles.btn}>Abra sua conta digital</button>
+            <ButtonCta text="Open Your Account"/>
       </div>
     </nav>
   );

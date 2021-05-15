@@ -1,8 +1,36 @@
 :root {
-    --black-bg:#181818;
-    --black-a:#181818;
-    --black-b:#2D2E2E;
-    --white-a:#FFF;
-    --white-b:#C4C4C4;
-    --blue-a:#48D1D6;
+    --color-bg:#0F1710;
+    --color-primary:#0F1710;
+    --logo: #fff;
+    --bar-features:#fff;
+    --footer-divisor:#2D2E2E;
+    --footer-icon:#2D2E2E;
+    --color-primary--contrast:#2D2E2E;
+    --twiter-card:#2D2E2E;
+    --color-icon:#fff ;
+    --color-secundary:#36DC97;
+    --color-secundary-gradient: linear-gradient(128.13deg, #2CD3A5 -17.35%, #51F572 126.83%);
+    --text-color-primary:#FFF; 
+    --text-color-secundary:#C4C4C4; 
+}
+[data-theme='day']{
+    --color-bg:#FBFBFB;
+    --color-primary:#FBFBFB;
+    --bar-features:#2D2E2E;
+    --logo: #2D2E2E;
+    --footer-divisor:#dddddd;
+    --color-primary--contrast:#2D2E2E;
+    --color-icon:#2D2E2E ;
+    --twiter-card:#e7e7e7;
+    --footer-icon:#e7e7e7;
+    --color-secundary:#36DC97;
+    --color-secundary-gradient: linear-gradient(128.13deg, #2CD3A5 -17.35%, #51F572 126.83%);
+    --text-color-primary:rgb(19, 19, 19); 
+    --text-color-secundary:#313131; 
+}
+[data-theme='night']{
+    background: var(--color-bg);
+}
+[data-theme='day']{
+    background: var(--color-bg);
 }

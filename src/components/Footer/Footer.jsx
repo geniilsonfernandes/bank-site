@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 //css
 import styles from "./Footer.module.css";
 import { ReactComponent as LinkIndIcon } from "../../svg/LinkIndIcon.svg";
@@ -13,42 +13,45 @@ import { ReactComponent as Smile } from "../../svg/smile.svg";
 import { ReactComponent as Logo } from "../../svg/logo.svg";
 import FooterLinksGroup from "./FooterLinksGroup/FooterLinksGroup";
 import ContactBtn from "../Buttons/ContactBtn/ContactBtn";
+import { ThemeContext } from "../Theme/ThemeContext";
 
 const Footer = () => {
   const products = {
-    title: "Produtos Neon",
+    title: "Bak Products",
     links: [
-      { id: 1, linkName: "Cartão de crédito", link: "/" },
-      { id: 2, linkName: "Cartão pré-pago", link: "/" },
-      { id: 3, linkName: "Investimentos", link: "/" },
-      { id: 4, linkName: "Neon Mais", link: "/" },
-      { id: 5, linkName: "Empréstimo", link: "/" },
+      { id: 1, linkName: "Credit card", link: "/" },
+      { id: 2, linkName: "Prepaid card", link: "/" },
+      { id: 3, linkName: "Investments", link: "/" },
+      { id: 4, linkName: "Bak More", link: "/" },
+      { id: 5, linkName: "Loan", link: "/" },
     ],
   };
   const blog = {
-    title: "Blog",
+    title: "Resources",
     links: [
-      { id: 1, linkName: "#focanodinheiro", link: "/" },
-      { id: 2, linkName: "O poder da comunidade", link: "/" },
-      { id: 3, linkName: "Investimentos", link: "/" },
-      { id: 4, linkName: "Desafio das 52 semanas", link: "/" },
-      { id: 5, linkName: "Planilha de gastos", link: "/" },
+      { id: 1, linkName: "#yourmoney", link: "/" },
+      { id: 2, linkName: "The power of the community", link: "/" },
+      { id: 3, linkName: "Investments", link: "/" },
+      { id: 4, linkName: "52 week challenge", link: "/" },
+      { id: 5, linkName: "Spend spreadsheet", link: "/" },
     ],
   };
   const institucional = {
-    title: "Institucional",
+    title: "Company",
     links: [
-      { id: 1, linkName: "Ouvidoria", link: "/" },
-      { id: 2, linkName: "Fale conosco", link: "/" },
+      { id: 1, linkName: "Careers", link: "/" },
+      { id: 2, linkName: "Documentation", link: "/" },
     ],
   };
   const ajuda = {
-    title: "Ajuda",
+    title: "Help",
     links: [
-      { id: 1, linkName: "Ouvidoria", link: "/" },
-      { id: 2, linkName: "Fale conosco", link: "/" },
+      { id: 1, linkName: "About", link: "/" },
+      { id: 2, linkName: "Contact us", link: "/" },
     ],
   };
+
+  const { toggleTheme,theme  } = useContext(ThemeContext);
 
   return (
     <footer className="mwfit">
@@ -57,7 +60,7 @@ const Footer = () => {
           <Logo />
         </div>
 
-        <button className={styles.toggleBtn}>
+        <button className={styles.toggleBtn} onClick={toggleTheme} data-theme={theme}>
           Night <span> </span>
         </button>
 
@@ -66,22 +69,22 @@ const Footer = () => {
           <div className={styles.social__icons}>
             <ul>
               <li>
-                <a href="/">
-                  <LinkIndIcon />{" "}
+                <a href="/" className={styles.icon}>
+                  <LinkIndIcon />
                 </a>
               </li>
               <li>
-                <a href="/">
-                  <InstagramIcon />{" "}
+                <a href="/" className={styles.icon}>
+                  <InstagramIcon />
                 </a>
               </li>
               <li>
-                <a href="/">
-                  <TwiterIcon />{" "}
+                <a href="/" className={styles.icon}>
+                  <TwiterIcon />
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href="/" className={styles.icon}>
                   <FacebookIcon />
                 </a>
               </li>
@@ -109,10 +112,10 @@ const Footer = () => {
         <div className={styles.link__col_btn}>
           <ContactBtn
             Icon={Contact}
-            contact="oi@neon.com.br (24 horas)"
-            title="Atendimento"
+            contact="hello@bak.com.br (24h)"
+            title="Contact us"
           />
-          <ContactBtn Icon={Help} contact="imprensa@neon.com.br" title="Imprensa" />
+          <ContactBtn Icon={Help} contact="back@back.com.br" title="Contact us" />
         </div>
       </div>
       <span className={styles.divisor}></span>
@@ -121,9 +124,9 @@ const Footer = () => {
           <Smile />
         </span>
         <p>
-          Oi! Leu até aqui? Você se preocupa com os mínimos detalhes, mesmo. A gente
-          também. Por isso o time Neon está sempre trabalhando para fazer a conta digital
-          perfeita para você.
+          Hey! Have you read this far? You care about the smallest details, really. We
+          too. That's why the Neon team is always working to make the perfect digital
+          account for you.
         </p>
       </div>
     </footer>

@@ -1,3 +1,9 @@
+.header{
+    background-image: url('../../../img/cover_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 66px;
+}
 .cover {
     padding-top: 66px;
     display: flex;
@@ -5,7 +11,7 @@
     align-items: center;
     height: 100vh;
     position: relative;
-}   
+}
 
 .cover__left {
     flex: 0 0 50%;
@@ -16,13 +22,17 @@
     color: var(--blue-a);
     position: relative;
     margin-left: 16px;
+
+    background: var(--color-secundary-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .cover__left > span::after {
     content: "";
     position: absolute;
     left: -16px;
     bottom: 0;
-    background: var(--blue-a);
+    background: var(--color-secundary-gradient);
     width: 2px;
     height: 100%;
 }
@@ -30,7 +40,7 @@
     font-weight: 600;
     font-size: 48px;
     margin-top: 16px;
-    color: var(--white-a);
+    color: var(--text-color-primary);
     max-width: 85%;
 }
 .cover__right {
@@ -56,7 +66,9 @@
     font-weight: 400;
     font-size: 16px;
     margin-left: 16px;
-    color: var(--blue-a);
+    background: var(--color-secundary-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .cover__photo {
     max-width: 100%;
@@ -67,7 +79,7 @@
     margin-top: 48px;
     display: flex;
 }
-.date_info:nth-child(1){
+.date_info:nth-child(1) {
     margin-right: 48px;
 }
 .date_info {
@@ -78,16 +90,18 @@
     margin-right: 8px;
     font-weight: 400;
     font-size: 48px;
-    color: var(--white-a);
+
+    background: var(--color-secundary-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .date_info > p {
     font-weight: normal;
     font-size: 13px;
-    color: var(--white-b);
+    color: var(--text-color-primary);
     max-width: 80px;
 }
 /* info header */
-
 
 /* mobile */
 @media screen and (max-width: 1088px) {
@@ -123,7 +137,7 @@
         justify-content: flex-start;
     }
     .cover__photo {
-        max-width:80%;
+        max-width: 80%;
     }
     .scroll__action {
         display: none;

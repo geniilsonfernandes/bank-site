@@ -19,7 +19,7 @@
     font-weight: 600;
     font-size: 48px;
     margin-top: 16px;
-    color: var(--white-a);
+    color: var(--text-color-primary);
 }
 
 .text_feature p {
@@ -27,7 +27,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 27px;
-    color: var(--white-b);
+    color: var(--text-color-secundary);
     max-width: 316px;
 }
 
@@ -41,8 +41,8 @@
     align-items: center;
     justify-content: center;
     background: transparent;
-    border: 1px solid var(--white-a);
-    color: var(--white-a);
+    border: 1px solid var(--text-color-primary);
+    color: var(--text-color-primary);
     border-radius: 20px;
     font-family: Inter;
     font-weight: 600;
@@ -57,7 +57,7 @@
 .features__items{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 48px;
+    gap: 22px;
 }
 
 
