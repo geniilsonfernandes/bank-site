@@ -17,25 +17,16 @@
     flex: 0 0 50%;
 }
 .cover__left > span {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     color: var(--blue-a);
     position: relative;
-    margin-left: 16px;
 
     background: var(--color-secundary-gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.cover__left > span::after {
-    content: "";
-    position: absolute;
-    left: -16px;
-    bottom: 0;
-    background: var(--color-secundary-gradient);
-    width: 2px;
-    height: 100%;
-}
+
 .cover__left h1 {
     font-weight: 600;
     font-size: 48px;

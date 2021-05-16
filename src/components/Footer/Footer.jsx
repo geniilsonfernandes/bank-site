@@ -61,11 +61,11 @@ const Footer = () => {
         </div>
 
         <button className={styles.toggleBtn} onClick={toggleTheme} data-theme={theme}>
-          Night <span> </span>
+          {theme} <span> </span>
         </button>
 
         <div className={styles.footer__social}>
-          <span>Acompanhe nas redes</span>
+          <span>Follow on</span>
           <div className={styles.social__icons}>
             <ul>
               <li>

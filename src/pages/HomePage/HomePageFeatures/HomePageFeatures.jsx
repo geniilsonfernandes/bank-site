@@ -16,9 +16,8 @@ const HomePageFeatures = () => {
             <div className={styles.text_feature}>
               <h1>Easy to use</h1>
               <p>
-                Attribute-level authorization simplified. Publishing of public APIs,
-                end-to-end encryption, easy GDPR. It all comes by default when using
-                Homebase + Datahike.
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
               </p>
               <div className={styles.cta}>
                 <ButtonCta text="Open Your Account" />

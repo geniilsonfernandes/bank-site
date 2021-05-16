@@ -10,6 +10,7 @@ import HomePageCallToAction from "./HomePageCallToAction/HomePageCallToAction";
 import HomePageFeatures from "./HomePageFeatures/HomePageFeatures";
 import HomePagetesTimonial from "./HomePageClients/HomePageTestimonial";
 import Footer from "../../components/Footer/Footer";
+
 const HomePage = () => {
   return (
     <>

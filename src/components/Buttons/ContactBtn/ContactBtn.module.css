@@ -14,6 +14,10 @@
     text-align: left;
     cursor: pointer;
     margin-bottom: 16px;
+    transition: 200ms ease-in-out;
+}
+.btn:hover{
+    opacity: 0.8;
 }
 .btn span{
     margin-left: 12px;
