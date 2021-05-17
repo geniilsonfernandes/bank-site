@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    transition:  1300ms ease-in-out;
+}
 body {
     font-family: "Inter", sans-serif;
     background: var(--color-bg);

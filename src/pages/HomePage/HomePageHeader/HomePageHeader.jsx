@@ -1,6 +1,7 @@
 import React from "react";
 //img
 import coverImg from "../../../img/cover_img.png";
+import { ReactComponent as ArrowDown } from "../../../svg/header/arrow-down.svg";
 //css
 import styles from "./HomePageHeader.module.css";
 
@@ -14,6 +15,15 @@ const DateInfo = ({ number, text }) => {
 };
 
 const HomePageHeader = () => {
+
+  function pageScroll(){
+    console.log([window]);
+    window.scroll({
+      top: window.innerHeight-200,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <header className={styles.header}>
       <div className={`${styles.cover} mwfit `}>
@@ -31,6 +41,9 @@ const HomePageHeader = () => {
             src={coverImg}
             alt="A conta digital certa pra cuidar bem do seu dinheiro"
           />
+        </div>
+        <div className={styles.arrow} onClick={pageScroll}>
+          <ArrowDown /> <span>See more</span>
         </div>
       </div>
     </header>
